@@ -39,7 +39,9 @@ const router = createBrowserRouter([
               </Suspense>
             ),
             loader: (params) =>
-              import("./pages/Post").then((module) => module.loader({ params })),
+              import("./pages/Post").then((module) =>
+                module.loader({ params })
+              ),
           },
         ],
       },
